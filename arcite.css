@@ -1,12 +1,11 @@
 *{margin: 0;
 padding: 0;
 box-sizing: border-box;}
-body{
- 
-}
+
 .full-section{
 
 height: 1322px;
+width: 100%;
 /* background: rgba(255, 144, 14, 0.1); */
 background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(28,190,241,1) 0%, rgba(6,75,164,1) 0%, rgba(9,7,142,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 0%, rgba(5,109,187,1) 0%, rgba(55,181,238,1) 50%, rgba(55,181,238,1) 51%);
@@ -258,6 +257,7 @@ text-align: center;
 .fact-title{
   margin-top: 170px;
   margin-left:100px;
+  
 
 }
 .fact-title h1{
@@ -285,8 +285,7 @@ margin-bottom: 100px;
 .acivment{
   display: flex;
   justify-content: center;
-  gap: 100px;
-}
+  gap:50px ;}
 .logo{
   display: flex;
   flex-direction: column;
@@ -376,4 +375,267 @@ height: 100px;
 background-color: #FFF4E7;
 text-align: center;
 padding-top: 50px;
+ }
+ .heidd{
+  display: none;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* midea qurey */
+
+ @media only screen and (max-width:576px){
+  .full-section{
+    width:100%;
+    height: 900px;
+    margin-bottom: 500px;
+    
+  }
+
+  .header{
+   display:flex;
+   flex-direction: column;
+  
+  }
+.header-title{
+margin-left:0px;
+margin-top: 8px;
+text-transform: uppercase;
+font-style: italic;
+font-family: 'Work Sans';
+font-weight: 100;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+color: #131313;
+border-bottom: 4px solid #00d4ff;
+
+}
+.header img{
+width: 40px;
+margin-top: 20px;
+margin-bottom: -40px;
+display:block;
+z-index: 1;}
+
+.shap-left,.shap{
+display: none;
+}
+.header-title h1{
+margin-left:60px;
+margin-top: -15px;
+}
+.nav-list ul{
+  display: flex;
+  flex-direction:column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  
+}
+ul li{
+  padding:10px;
+  background-color:#fcfdfd;
+  width: 100%;
+  color:#131313;
+  font-size: 24px;
+  text-align: center;
+  color:black !important;
+visibility: hidden;
+position: absolute;
+}
+.main-title{
+  width: 562px;
+height: 225px;
+margin-left:0px;
+
+margin-top: 50px;
+font-family: 'Work Sans';
+}
+.main-title h1{
+font-weight: 500;
+font-size:44px;
+line-height: 70px;
+text-align: center;
+color: #131313;
+margin-bottom: 10px;
+
+}
+.main-title p{
+  font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+text-align: center;
+color:white;
+width: 470px;
+margin-left:10px;}
+
+.btn{
+  margin-left:186px;
+}
+.banar-img img{
+  width:500px;
+  height: 400px;
+}
+.banar-img{
+  margin-left: 0px;
+ 
+}
+.future-container{
+  display: flex;
+  flex-direction:column-reverse;
+  gap: 0px;
+  margin-bottom: 450px;
+  height: 1000px;
+  
+  
+
+}
+.img-container{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin-left: 0px;
+ margin-bottom: 100px;
+
+
+}
+.future-artical{
+  margin-top: 250px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+.img-container img{
+  width: 100%;
+  transition: all 0.5s;
+margin-left: 20px;
+height: 400px;
+border-radius: 10px;
+}
+.img-container img:hover{
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.40);
+}
+
+.card-1,.exp-btn{
+  transition: all 0.6s;
+}
+.card-1:hover{
+box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.26);
+margin-left: 20px;
+
+
+}
+
+.exp-container{
+  width:100%;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 0px;
+  gap:450px;
+
+}
+.exp-img{
+  
+}
+.exp-img img{
+  width: 100%;
+  height: 600px;
+}
+.exp-btn{
+  position:relative;
+  top:500px;
+  left:150px;
+  width:300PX;
+height: 70px;
+background: #FF900E;
+border-radius: 8px;
+padding: 25px;
+border: none;
+font-size: 23px;
+text-align: center;
+
+}
+.exp-btn:hover{
+box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.26);
+margin-top: -10px;
+}
+
+.fact-title{
+  margin-left: 30px;
+  margin-bottom: -50px;
+  width: 100%;
+  margin-top: 600px;
+}
+.fact-title p{
+  width: 420px;
+
+}
+
+.acivment{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.logo{
+  display: flex;
+  flex-direction: column;
+  width: 400.83px;
+height: 200.83px;
+border: 1px solid #FF900E;
+border-radius: 8px;
+justify-content:center ;
+align-items: center;
+transition: all 0.5s;}
+
+ .sponsor{
+width: 500px;
+height:150px;
+font-family: 'Work Sans';
+font-style: normal;
+line-height: 26px;
+text-align: center;
+color: #727272;
+margin-top: 24px;
+margin-bottom: 30px;}
+.sponsor p{
+   width: 450px;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+text-align: center;
+color: #727272;
+
+}
+.spon-logo{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-top: 0px;
+  height: 200px;
+}
+
+.foter{
+  width:100%;
+  text-align: center;
+
+}
+
  }
